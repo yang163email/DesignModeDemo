@@ -14,15 +14,15 @@ public class TvController {
     private int mState = POWER_OFF;
 
     public void powerOn() {
-        mState = POWER_ON;
         if (mState == POWER_OFF) {
+            mState = POWER_ON;
             System.out.println("开机啦");
         }
     }
 
     public void powerOff() {
-        mState = POWER_OFF;
         if (mState == POWER_ON) {
+            mState = POWER_OFF;
             System.out.println("关机啦");
         }
     }
